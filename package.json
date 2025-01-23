@@ -7,7 +7,7 @@
     "node": ">=22.11.x",
     "pnpm": ">=9"
   },
-  "packageManager": "pnpm@9.13.2",
+  "packageManager": "pnpm@9.15.4",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -30,11 +30,11 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "lucide-react": "^0.473.0",
-    "next": "^15.1.5",
+    "next": "^15.1.6",
     "next-seo": "^6.6.0",
     "next-themes": "^0.4.4",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
     "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
@@ -42,23 +42,24 @@
     "@commitlint/config-conventional": "^19.6.0",
     "@commitlint/cz-commitlint": "^19.6.1",
     "@commitlint/types": "^19.5.0",
+    "@eslint/eslintrc": "^3.2.0",
+    "@tailwindcss/postcss": "^4.0.0",
     "@tailwindcss/typography": "^0.5.16",
-    "@types/node": "^22.10.7",
-    "@types/react": "18.3.12",
-    "autoprefixer": "^10.4.20",
+    "@types/node": "^22.10.8",
+    "@types/react": "19.0.7",
     "commit-and-tag-version": "^12.5.0",
     "commitizen": "^4.3.1",
     "cross-env": "^7.0.3",
-    "eslint": "^8.57.0",
-    "eslint-config-next": "^15.1.5",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "^15.1.6",
     "husky": "^9.1.7",
-    "knip": "^5.42.2",
+    "knip": "^5.43.1",
     "lint-staged": "^15.4.1",
     "next-sitemap": "^4.2.3",
     "postcss": "^8.5.1",
-    "prettier": "3.3.3",
+    "prettier": "3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.10",
-    "tailwindcss": "^3.4.17",
-    "typescript": "5.6.3"
+    "tailwindcss": "^4.0.0",
+    "typescript": "5.7.3"
   }
 }
