@@ -7,7 +7,7 @@
     },
     "lint": {
       "outputs": [],
-      "inputs": [".eslintrc.*", "src/**"]
+      "inputs": ["eslint.config.*", "src/**"]
     },
     "type:check": {
       "outputs": ["*.tsbuildinfo"]

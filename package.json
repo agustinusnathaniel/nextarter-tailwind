@@ -42,10 +42,10 @@
     "@commitlint/config-conventional": "^19.6.0",
     "@commitlint/cz-commitlint": "^19.6.1",
     "@commitlint/types": "^19.5.0",
+    "@tailwindcss/postcss": "^4.0.0",
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^22.10.8",
     "@types/react": "19.0.7",
-    "autoprefixer": "^10.4.20",
     "commit-and-tag-version": "^12.5.0",
     "commitizen": "^4.3.1",
     "cross-env": "^7.0.3",
@@ -58,7 +58,7 @@
     "postcss": "^8.5.1",
     "prettier": "3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.10",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^4.0.0",
     "typescript": "5.7.3"
   }
 }
