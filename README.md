@@ -11,7 +11,7 @@ Start developing right away!
 
 - 🚀 **Next.js 13 (App Router)** - **React 18**
 - ⛓️ **TypeScript**
-- **TailwindCSS** v3
+- **TailwindCSS** v4
   - recommended to extend with one of these:
     - [shadcn/ui](https://ui.shadcn.com/)
     - [tremor](https://www.tremor.so/)
