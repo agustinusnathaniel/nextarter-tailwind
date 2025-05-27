@@ -4,7 +4,7 @@
   "private": true,
   "author": "agustinusnathaniel",
   "engines": {
-    "node": ">=22.11.x"
+    "node": ">=22.16.x"
   },
   "packageManager": "pnpm@10.7.1",
   "pnpm": {
