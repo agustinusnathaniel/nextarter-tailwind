@@ -1,8 +1,9 @@
 {
   "recommendations": [
-    "dbaeumer.vscode-eslint",
+    "biomejs.biome",
     "dsznajder.es7-react-js-snippets",
     "mhutchie.git-graph",
-    "oderwat.indent-rainbow"
+    "oderwat.indent-rainbow",
+    "yoavbls.pretty-ts-errors"
   ]
 }

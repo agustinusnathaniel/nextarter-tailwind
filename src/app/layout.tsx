@@ -51,7 +51,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
       <body
         className={cn(
           'bg-background min-h-screen font-sans antialiased',
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         <Layout>

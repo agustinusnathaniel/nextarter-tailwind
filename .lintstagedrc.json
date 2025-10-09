@@ -1,7 +1,8 @@
 {
-  "src/**/*.{js,jsx,ts,tsx}": [
-    "eslint --fix --max-warnings=0",
-    "prettier --write"
+  "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+    "biome check --write --no-errors-on-unmatched --error-on-warnings"
   ],
-  "src/**/*.{json,css,scss,md}": ["prettier --write"]
+  "*.{ts,js,json,md}": [
+    "biome check --write --no-errors-on-unmatched --error-on-warnings"
+  ]
 }

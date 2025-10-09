@@ -5,9 +5,9 @@
       "outputs": [".next/**", "!.next/cache/**", "public/**"],
       "env": []
     },
-    "lint": {
+    "biome:check": {
       "outputs": [],
-      "inputs": ["eslint.config.*", "src/**"]
+      "inputs": ["biome.json", "src/**"]
     },
     "type:check": {
       "outputs": ["*.tsbuildinfo"]

@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+/** biome-ignore-all lint/performance/noImgElement: - */
 
 const repoName = 'agustinusnathaniel/nextarter-tailwind';
 

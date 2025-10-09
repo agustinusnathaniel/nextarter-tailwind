@@ -6,28 +6,28 @@
   "engines": {
     "node": ">=22.16.x"
   },
-  "packageManager": "pnpm@10.7.1",
+  "packageManager": "pnpm@10.16.1",
   "pnpm": {
     "neverBuiltDependencies": []
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "turbo": "pnpm dlx turbo@2.5.0",
-    "build:turbo": "pnpm turbo build",
+    "turbo": "pnpm dlx turbo@2.5.6",
+    "build:turbo": "pnpm turbo run build",
     "postbuild": "next-sitemap --config next-sitemap.config.js",
+    "biome:check": "biome check --no-errors-on-unmatched --error-on-warnings",
+    "biome:fix": "pnpm biome:check --write",
+    "biome:ci": "biome ci",
     "start": "next start",
-    "lint": "next lint",
-    "lint:fix": "eslint src --fix && pnpm format",
     "type:check": "tsc --noEmit",
-    "check:turbo": "pnpm turbo lint type:check",
-    "format": "prettier --write src",
+    "check:turbo": "pnpm turbo biome:check type:check",
+    "test:e2e": "playwright test",
     "up-interactive": "pnpm up -i",
     "up-latest": "pnpm up-interactive -L",
     "release": "cross-env HUSKY=0 commit-and-tag-version",
     "push-release": "git push --follow-tags origin main",
-    "prepare": "husky",
-    "knip": "knip"
+    "prepare": "husky"
   },
   "dependencies": {
     "clsx": "^2.1.1",
@@ -39,11 +39,11 @@
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.2.5",
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@commitlint/cz-commitlint": "^20.1.0",
     "@commitlint/types": "^20.0.0",
-    "@eslint/eslintrc": "^3.3.1",
     "@tailwindcss/postcss": "^4.1.14",
     "@tailwindcss/typography": "^0.5.19",
     "@types/node": "^24.7.0",
@@ -51,15 +51,12 @@
     "commit-and-tag-version": "^12.6.0",
     "commitizen": "^4.3.1",
     "cross-env": "^10.1.0",
-    "eslint": "^9.37.0",
     "eslint-config-next": "^15.5.4",
     "husky": "^9.1.7",
     "knip": "^5.64.2",
     "lint-staged": "^16.2.3",
     "next-sitemap": "^4.2.3",
     "postcss": "^8.5.6",
-    "prettier": "3.6.2",
-    "prettier-plugin-tailwindcss": "^0.6.14",
     "tailwindcss": "^4.1.14",
     "typescript": "5.9.3"
   }
