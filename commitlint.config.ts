@@ -18,6 +18,8 @@ const commitlintConfiguration: UserConfig = {
         'pages',
         'styles',
         'utils',
+        'security',
+        'deps',
       ],
     ],
   },
