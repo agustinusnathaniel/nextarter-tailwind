@@ -1,63 +1,98 @@
 <img src="https://og.sznm.dev/api/generate?heading=nextarter-tailwind&text=Next.js+(App+Router)+template+with+TailwindCSS+and+TypeScript+setup.&template=color&center=true&height=320" />
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/agustinusnathaniel/nextarter-tailwind) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/agustinusnathaniel/nextarter-tailwind)
+# nextarter-tailwind
 
+A highly opinionated, bleeding-edge Next.js template focused on developer experience, strict code quality, and performance.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/agustinusnathaniel/nextarter-tailwind) [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/agustinusnathaniel/nextarter-tailwind)
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/agustinusnathaniel/nextarter-tailwind)
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app), added with [**TailwindCSS**](https://tailwindcss.com) and [**TypeScript**](https://www.typescriptlang.org) setup.
-Start developing right away!
+---
 
-## 🔋⚡ Super Battery Packed template
+## 🔋 Features
 
-- 🚀 **Next.js 15 (App Router)** - **React 19**
-- ⛓️ **TypeScript**
-- **TailwindCSS** v4
-  - recommended to extend with one of these:
-    - [shadcn/ui](https://ui.shadcn.com/)
-    - [tremor](https://www.tremor.so/)
-    - [flowbite-react](https://www.flowbite-react.com/)
-    - [daisyUI](https://daisyui.com/)
-    - [Headless UI](https://headlessui.com/)
-    - [Mantine](https://mantine.dev)
-    - [NextUI v2](https://github.com/nextui-org/nextui/discussions/1035)
-- ✔️ **toolings** for linting, formatting, and conventions configured
-  - `biome`, `husky`, `lint-staged`, `commitlint`, `commitizen`, and `standard-version`
-  - `pre-commit`, `pre-push`, `commit-msg`, `prepare-commit-msg` hook configured
-- 🔎 SEO optimization configured - with `next-sitemap`.
-  - you'll need to reconfigure or tinker with it to get it right according to your needs, but it's there if you need it.
-- 🎨 basic responsive layout configured - don't need it? just remove it 😃
-- 🤖 **Automatic Dependency Update** with [Renovate](https://renovatebot.com/)
-- 🏎️ **Turbo** setup
+- 🚀 **Next.js & React**: Uses Next.js App Router and React 19.
+- 🎨 **Tailwind CSS v4**: CSS-first styling with the latest engine.
+- 🛠️ **Biome**: Single tool for linting and formatting (35x faster than Prettier/ESLint).
+- 🏎️ **Turborepo**: Optimized build piping and caching.
+- 📦 **pnpm**: Fast, disk-space-efficient package management.
+- 🔍 **SEO Optimized**: Pre-configured `next-sitemap` and metadata handling.
+- 🏗️ **Architectural Integrity**: Separates routing (`app/`) from implementation (`lib/`).
+- 🤖 **Agent-Friendly**: Includes `AGENTS.md` to help AI coding assistants reason about the codebase.
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=sozonome_nextarter-tailwind&metric=alert_status)](https://sonarcloud.io/dashboard?id=sozonome_nextarter-tailwind) [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=sozonome_nextarter-tailwind&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=sozonome_nextarter-tailwind) [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=sozonome_nextarter-tailwind&metric=bugs)](https://sonarcloud.io/dashboard?id=sozonome_nextarter-tailwind) [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=sozonome_nextarter-tailwind&metric=code_smells)](https://sonarcloud.io/dashboard?id=sozonome_nextarter-tailwind) [![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=sozonome_nextarter-tailwind&metric=duplicated_lines_density)](https://sonarcloud.io/dashboard?id=sozonome_nextarter-tailwind)
+---
 
-## Getting Started
+## 🏗️ Architecture Overview
 
-You can either click `Use this template` button on this repository and clone the repo or directly from your terminal:
+The project uses a **Lib-Delegation** pattern to keep the routing layer clean.
 
+```mermaid
+graph TD
+    subgraph "Routing Layer"
+        A[src/app] -->|Exports| B[Next.js Entry Points]
+    end
+
+    subgraph "Implementation Layer"
+        B --> C[src/lib/pages]
+        B --> D[src/lib/layout]
+        C --> E[src/lib/components]
+        D --> E
+        E --> F[src/lib/styles]
+    end
+```
+
+For more details, see [SPEC.md](./SPEC.md).
+
+---
+
+## 🚀 Getting Started
+
+### 1. Initialize
 ```bash
 npx degit agustinusnathaniel/nextarter-tailwind <APP_NAME>
+cd <APP_NAME>
 ```
 
-Install packages:
-
+### 2. Install Dependencies
 ```bash
-pnpm i
+pnpm install
 ```
 
-Then, run the development server:
-
+### 3. Run Development Server
 ```bash
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to see your app.
 
-You can start editing the page by modifying `src/pages/index.tsx`. The page auto-updates as you edit the file.
+---
 
-## References
+## 🛠️ Development Workflows
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [TailwindCSS](https://tailwindcss.com)
-- [TypeScript](https://www.typescriptlang.org)
+| Task | Command |
+| :--- | :--- |
+| Lint & Format | `pnpm biome:fix` |
+| Type Check | `pnpm type:check` |
+| E2E Tests | `pnpm test:e2e` |
+| Build | `pnpm build` |
+| Release | `pnpm release` |
+
+Detailed contribution guidelines can be found in [CONTRIBUTING.md](./CONTRIBUTING.md).
+
+---
+
+## 📖 Documentation Index
+
+- [**SPEC.md**](./SPEC.md): Technical specification and invariants.
+- [**CONTRIBUTING.md**](./CONTRIBUTING.md): Contribution workflow and standards.
+- [**AGENTS.md**](./AGENTS.md): Guidance for AI IDEs and coding assistants.
+
+---
+
+## 📝 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+Built with ❤️ by [@agstnsnathaniel](https://twitter.com/agstnsnathaniel)
