@@ -56,7 +56,7 @@
     "cross-env": "^10.1.0",
     "eslint-config-next": "16.0.10",
     "husky": "^9.1.7",
-    "knip": "^5.75.2",
+    "knip": "^5.77.4",
     "lint-staged": "^16.2.7",
     "next-sitemap": "^4.2.3",
     "postcss": "^8.5.6",
