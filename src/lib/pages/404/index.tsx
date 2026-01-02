@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Page404 = () => {
+export const Page404 = () => {
   return (
     <>
       <div className="grid gap-2 p-12 text-center">
@@ -31,5 +31,3 @@ const Page404 = () => {
     </>
   );
 };
-
-export default Page404;
