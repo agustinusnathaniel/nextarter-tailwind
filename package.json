@@ -8,10 +8,7 @@
   },
   "packageManager": "pnpm@10.24.0",
   "pnpm": {
-    "neverBuiltDependencies": [],
-    "overrides": {
-      "@types/react": "19.2.2"
-    }
+    "neverBuiltDependencies": []
   },
   "scripts": {
     "dev": "next dev",
