@@ -5,7 +5,11 @@
       "outputs": [".next/**", "!.next/cache/**", "public/**"],
       "env": []
     },
-    "biome:check": {
+    "ultracite:check": {
+      "outputs": [],
+      "inputs": ["biome.json", "src/**"]
+    },
+    "biome:ci": {
       "outputs": [],
       "inputs": ["biome.json", "src/**"]
     },

@@ -50,8 +50,8 @@ const RootLayout = ({ children }: RootLayoutProps) => {
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'bg-background min-h-screen font-sans antialiased',
-          fontSans.variable,
+          'min-h-screen bg-background font-sans antialiased',
+          fontSans.variable
         )}
       >
         <Layout>

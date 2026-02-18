@@ -6,8 +6,8 @@ export const Footer = () => {
           {new Date().getFullYear()} -{' '}
           <a
             href="https://agustinusnathaniel.com"
-            target="_blank"
             rel="noopener noreferrer"
+            target="_blank"
           >
             agustinusnathaniel.com
           </a>

@@ -1,8 +1,3 @@
 {
-  "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-    "biome check --write --no-errors-on-unmatched --error-on-warnings"
-  ],
-  "*.{ts,js,json,md}": [
-    "biome check --write --no-errors-on-unmatched --error-on-warnings"
-  ]
+  "*.{js,jsx,ts,tsx,json,jsonc,css,scss,md,mdx}": ["ultracite fix"]
 }

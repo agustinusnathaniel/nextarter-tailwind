@@ -1,3 +1,1 @@
-import { Page404 } from '@/lib/pages/404';
-
-export default Page404;
+export { Page404 as default } from '@/lib/pages/404';
