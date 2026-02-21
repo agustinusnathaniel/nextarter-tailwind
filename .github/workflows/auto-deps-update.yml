@@ -114,3 +114,4 @@ Updated packages: ${{ steps.outdated.outputs.packages }}
           labels: |
             dependencies
             automated
+
