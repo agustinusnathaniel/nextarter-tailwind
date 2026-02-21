@@ -55,11 +55,8 @@ jobs:
       - name: Update all dependencies to latest
         run: pnpm update --latest
       
-      - name: Run type check
-        run: pnpm type:check
-      
-      - name: Run lint check
-        run: pnpm ultracite:check
+      - name: Run checks (type:check + ultracite:check)
+        run: pnpm check:turbo
       
       - name: Create branch and commit
         id: commit
@@ -104,8 +101,7 @@ Updated packages: ${{ steps.outdated.outputs.packages }}
             ${{ steps.outdated.outputs.packages }}
             
             ### Verification
-            - ✅ `pnpm type:check` passed
-            - ✅ `pnpm ultracite:check` passed
+            - ✅ `pnpm check:turbo` passed (includes type:check + ultracite:check)
             
             ### Notes
             - All dependencies updated to latest compatible versions
