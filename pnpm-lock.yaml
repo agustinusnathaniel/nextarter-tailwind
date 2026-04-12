@@ -15,8 +15,8 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       lucide-react:
-        specifier: ^1.7.0
-        version: 1.7.0(react@19.2.4)
+        specifier: ^1.8.0
+        version: 1.8.0(react@19.2.4)
       next:
         specifier: 16.2.3
         version: 16.2.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -38,13 +38,13 @@ importers:
         version: 2.4.9
       '@commitlint/cli':
         specifier: ^20.5.0
-        version: 20.5.0(@types/node@25.5.2)(conventional-commits-parser@6.3.0)(typescript@6.0.2)
+        version: 20.5.0(@types/node@25.6.0)(conventional-commits-parser@6.3.0)(typescript@6.0.2)
       '@commitlint/config-conventional':
         specifier: ^20.5.0
         version: 20.5.0
       '@commitlint/cz-commitlint':
         specifier: ^20.5.1
-        version: 20.5.1(@types/node@25.5.2)(commitizen@4.3.1(@types/node@25.5.2)(typescript@6.0.2))(inquirer@8.2.5)(typescript@6.0.2)
+        version: 20.5.1(@types/node@25.6.0)(commitizen@4.3.1(@types/node@25.6.0)(typescript@6.0.2))(inquirer@8.2.5)(typescript@6.0.2)
       '@commitlint/types':
         specifier: ^20.5.0
         version: 20.5.0
@@ -55,8 +55,8 @@ importers:
         specifier: ^0.5.19
         version: 0.5.19(tailwindcss@4.2.2)
       '@types/node':
-        specifier: ^25.5.2
-        version: 25.5.2
+        specifier: ^25.6.0
+        version: 25.6.0
       '@types/react':
         specifier: 19.2.14
         version: 19.2.14
@@ -65,7 +65,7 @@ importers:
         version: 12.7.1
       commitizen:
         specifier: ^4.3.1
-        version: 4.3.1(@types/node@25.5.2)(typescript@6.0.2)
+        version: 4.3.1(@types/node@25.6.0)(typescript@6.0.2)
       cross-env:
         specifier: ^10.1.0
         version: 10.1.0
@@ -73,8 +73,8 @@ importers:
         specifier: ^9.1.7
         version: 9.1.7
       knip:
-        specifier: ^6.3.0
-        version: 6.3.0
+        specifier: ^6.3.1
+        version: 6.4.1
       lint-staged:
         specifier: ^16.4.0
         version: 16.4.0
@@ -82,8 +82,8 @@ importers:
         specifier: ^4.2.3
         version: 4.2.3(next@16.2.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4))
       postcss:
-        specifier: ^8.5.8
-        version: 8.5.8
+        specifier: ^8.5.9
+        version: 8.5.9
       tailwindcss:
         specifier: ^4.2.2
         version: 4.2.2
@@ -828,8 +828,8 @@ packages:
   '@types/minimist@1.2.5':
     resolution: {integrity: sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==}
 
-  '@types/node@25.5.2':
-    resolution: {integrity: sha512-tO4ZIRKNC+MDWV4qKVZe3Ql/woTnmHDr5JD8UI5hn2pwBrHEwOEMZK7WlNb5RKB6EoJ02gwmQS9OrjuFnZYdpg==}
+  '@types/node@25.6.0':
+    resolution: {integrity: sha512-+qIYRKdNYJwY3vRCZMdJbPLJAtGjQBudzZzdzwQYkEPQd+PJGixUL5QfvCLDaULoLv+RhT3LDkwEfKaAkgSmNQ==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -1564,8 +1564,8 @@ packages:
     resolution: {integrity: sha512-dcS1ul+9tmeD95T+x28/ehLgd9mENa3LsvDTtzm3vyBEO7RPptvAD+t44WVXaUjTBRcrpFeFlC8WCruUR456hw==}
     engines: {node: '>=0.10.0'}
 
-  knip@6.3.0:
-    resolution: {integrity: sha512-g6dVPoTw6iNm3cubC5IWxVkVsd0r5hXhTBTbAGIEQN53GdA2ZM/slMTPJ7n5l8pBebNQPHpxjmKxuR4xVQ2/hQ==}
+  knip@6.4.1:
+    resolution: {integrity: sha512-Ry+ywmDFSZvKp/jx7LxMgsZWRTs931alV84e60lh0Stf6kSRYqSIUTkviyyDFRcSO3yY1Kpbi83OirN+4lA2Xw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
@@ -1718,8 +1718,8 @@ packages:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
     engines: {node: '>=10'}
 
-  lucide-react@1.7.0:
-    resolution: {integrity: sha512-yI7BeItCLZJTXikmK4KNUGCKoGzSvbKlfCvw44bU4fXAL6v3gYS4uHD1jzsLkfwODYwI6Drw5Tu9Z5ulDe0TSg==}
+  lucide-react@1.8.0:
+    resolution: {integrity: sha512-WuvlsjngSk7TnTBJ1hsCy3ql9V9VOdcPkd3PKcSmM34vJD8KG6molxz7m7zbYFgICwsanQWmJ13JlYs4Zp7Arw==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
@@ -1986,8 +1986,8 @@ packages:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
     engines: {node: ^10 || ^12 || >=14}
 
-  postcss@8.5.8:
-    resolution: {integrity: sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==}
+  postcss@8.5.9:
+    resolution: {integrity: sha512-7a70Nsot+EMX9fFU3064K/kdHWZqGVY+BADLyXc8Dfv+mTLLVl6JzJpPaCZ2kQL9gIJvKXSLMHhqdRRjwQeFtw==}
     engines: {node: ^10 || ^12 || >=14}
 
   process-nextick-args@2.0.1:
@@ -2325,8 +2325,8 @@ packages:
     resolution: {integrity: sha512-X2wH19RAPZE3+ldGicOkoj/SIA83OIxcJ6Cuaw23hf8Xc6fQpvZXY0SftE2JgS0QhYLUG4uwodSI3R53keyh7w==}
     engines: {node: '>=14'}
 
-  undici-types@7.18.2:
-    resolution: {integrity: sha512-AsuCzffGHJybSaRrmr5eHr81mwJU3kjw6M+uprWvCXiNeN9SOGwQ3Jn8jb8m3Z6izVgknn1R0FTCEAP2QrLY/w==}
+  undici-types@7.19.2:
+    resolution: {integrity: sha512-qYVnV5OEm2AW8cJMCpdV20CDyaN3g0AjDlOGf1OW4iaDEx8MwdtChUp4zu4H0VP3nDRF/8RKWH+IPp9uW0YGZg==}
 
   universalify@2.0.1:
     resolution: {integrity: sha512-gptHNQghINnc/vTGIk0SOFGFNXw7JVrlRUtConJRlvaw6DuX0wO5Jeko9sWrMBhh+PsYAZ7oXAiOnf/UKogyiw==}
@@ -2467,11 +2467,11 @@ snapshots:
       '@clack/core': 1.1.0
       sisteransi: 1.0.5
 
-  '@commitlint/cli@20.5.0(@types/node@25.5.2)(conventional-commits-parser@6.3.0)(typescript@6.0.2)':
+  '@commitlint/cli@20.5.0(@types/node@25.6.0)(conventional-commits-parser@6.3.0)(typescript@6.0.2)':
     dependencies:
       '@commitlint/format': 20.5.0
       '@commitlint/lint': 20.5.0
-      '@commitlint/load': 20.5.0(@types/node@25.5.2)(typescript@6.0.2)
+      '@commitlint/load': 20.5.0(@types/node@25.6.0)(typescript@6.0.2)
       '@commitlint/read': 20.5.0(conventional-commits-parser@6.3.0)
       '@commitlint/types': 20.5.0
       tinyexec: 1.0.4
@@ -2492,12 +2492,12 @@ snapshots:
       '@commitlint/types': 20.5.0
       ajv: 8.18.0
 
-  '@commitlint/cz-commitlint@20.5.1(@types/node@25.5.2)(commitizen@4.3.1(@types/node@25.5.2)(typescript@6.0.2))(inquirer@8.2.5)(typescript@6.0.2)':
+  '@commitlint/cz-commitlint@20.5.1(@types/node@25.6.0)(commitizen@4.3.1(@types/node@25.6.0)(typescript@6.0.2))(inquirer@8.2.5)(typescript@6.0.2)':
     dependencies:
       '@commitlint/ensure': 20.5.0
-      '@commitlint/load': 20.5.0(@types/node@25.5.2)(typescript@6.0.2)
+      '@commitlint/load': 20.5.0(@types/node@25.6.0)(typescript@6.0.2)
       '@commitlint/types': 20.5.0
-      commitizen: 4.3.1(@types/node@25.5.2)(typescript@6.0.2)
+      commitizen: 4.3.1(@types/node@25.6.0)(typescript@6.0.2)
       inquirer: 8.2.5
       is-plain-obj: 4.1.0
       picocolors: 1.1.1
@@ -2534,14 +2534,14 @@ snapshots:
       '@commitlint/rules': 20.5.0
       '@commitlint/types': 20.5.0
 
-  '@commitlint/load@20.5.0(@types/node@25.5.2)(typescript@6.0.2)':
+  '@commitlint/load@20.5.0(@types/node@25.6.0)(typescript@6.0.2)':
     dependencies:
       '@commitlint/config-validator': 20.5.0
       '@commitlint/execute-rule': 20.0.0
       '@commitlint/resolve-extends': 20.5.0
       '@commitlint/types': 20.5.0
       cosmiconfig: 9.0.1(typescript@6.0.2)
-      cosmiconfig-typescript-loader: 6.2.0(@types/node@25.5.2)(cosmiconfig@9.0.1(typescript@6.0.2))(typescript@6.0.2)
+      cosmiconfig-typescript-loader: 6.2.0(@types/node@25.6.0)(cosmiconfig@9.0.1(typescript@6.0.2))(typescript@6.0.2)
       is-plain-obj: 4.1.0
       lodash.mergewith: 4.6.2
       picocolors: 1.1.1
@@ -2990,7 +2990,7 @@ snapshots:
       '@alloc/quick-lru': 5.2.0
       '@tailwindcss/node': 4.2.2
       '@tailwindcss/oxide': 4.2.2
-      postcss: 8.5.8
+      postcss: 8.5.9
       tailwindcss: 4.2.2
 
   '@tailwindcss/typography@0.5.19(tailwindcss@4.2.2)':
@@ -3005,9 +3005,9 @@ snapshots:
 
   '@types/minimist@1.2.5': {}
 
-  '@types/node@25.5.2':
+  '@types/node@25.6.0':
     dependencies:
-      undici-types: 7.18.2
+      undici-types: 7.19.2
 
   '@types/normalize-package-data@2.4.4': {}
 
@@ -3191,10 +3191,10 @@ snapshots:
       yaml: 2.8.3
       yargs: 17.7.2
 
-  commitizen@4.3.1(@types/node@25.5.2)(typescript@6.0.2):
+  commitizen@4.3.1(@types/node@25.6.0)(typescript@6.0.2):
     dependencies:
       cachedir: 2.3.0
-      cz-conventional-changelog: 3.3.0(@types/node@25.5.2)(typescript@6.0.2)
+      cz-conventional-changelog: 3.3.0(@types/node@25.6.0)(typescript@6.0.2)
       dedent: 0.7.0
       detect-indent: 6.1.0
       find-node-modules: 2.1.3
@@ -3330,9 +3330,9 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@6.2.0(@types/node@25.5.2)(cosmiconfig@9.0.1(typescript@6.0.2))(typescript@6.0.2):
+  cosmiconfig-typescript-loader@6.2.0(@types/node@25.6.0)(cosmiconfig@9.0.1(typescript@6.0.2))(typescript@6.0.2):
     dependencies:
-      '@types/node': 25.5.2
+      '@types/node': 25.6.0
       cosmiconfig: 9.0.1(typescript@6.0.2)
       jiti: 2.6.1
       typescript: 6.0.2
@@ -3361,16 +3361,16 @@ snapshots:
 
   csstype@3.2.3: {}
 
-  cz-conventional-changelog@3.3.0(@types/node@25.5.2)(typescript@6.0.2):
+  cz-conventional-changelog@3.3.0(@types/node@25.6.0)(typescript@6.0.2):
     dependencies:
       chalk: 2.4.2
-      commitizen: 4.3.1(@types/node@25.5.2)(typescript@6.0.2)
+      commitizen: 4.3.1(@types/node@25.6.0)(typescript@6.0.2)
       conventional-commit-types: 3.0.0
       lodash.map: 4.6.0
       longest: 2.0.1
       word-wrap: 1.2.5
     optionalDependencies:
-      '@commitlint/load': 20.5.0(@types/node@25.5.2)(typescript@6.0.2)
+      '@commitlint/load': 20.5.0(@types/node@25.6.0)(typescript@6.0.2)
     transitivePeerDependencies:
       - '@types/node'
       - typescript
@@ -3756,7 +3756,7 @@ snapshots:
 
   kind-of@6.0.3: {}
 
-  knip@6.3.0:
+  knip@6.4.1:
     dependencies:
       '@nodelib/fs.walk': 1.2.8
       fast-glob: 3.3.3
@@ -3907,7 +3907,7 @@ snapshots:
     dependencies:
       yallist: 4.0.0
 
-  lucide-react@1.7.0(react@19.2.4):
+  lucide-react@1.8.0(react@19.2.4):
     dependencies:
       react: 19.2.4
 
@@ -4203,7 +4203,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  postcss@8.5.8:
+  postcss@8.5.9:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
@@ -4520,7 +4520,7 @@ snapshots:
 
   unbash@2.2.0: {}
 
-  undici-types@7.18.2: {}
+  undici-types@7.19.2: {}
 
   universalify@2.0.1: {}
 
