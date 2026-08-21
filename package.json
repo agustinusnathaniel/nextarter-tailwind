@@ -14,7 +14,6 @@
     "push-release": "git push --follow-tags origin main",
     "release": "cross-env HUSKY=0 commit-and-tag-version",
     "start": "next start",
-    "test:e2e": "playwright test",
     "turbo": "pnpm dlx turbo@2.6.1",
     "type:check": "tsc --noEmit",
     "ultracite:check": "ultracite check",
