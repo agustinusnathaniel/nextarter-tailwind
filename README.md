@@ -73,7 +73,6 @@ Open [http://localhost:3000](http://localhost:3000) to see your app.
 | :--- | :--- |
 | Lint & Format | `pnpm biome:fix` |
 | Type Check | `pnpm type:check` |
-| E2E Tests | `pnpm test:e2e` |
 | Build | `pnpm build` |
 | Release | `pnpm release` |
 

@@ -63,18 +63,7 @@ pnpm type:check
 
 ---
 
-## 4. Testing Expectations
-
-We use **Playwright** for E2E testing.
-- New features should include relevant E2E tests in the `tests/` directory (if applicable).
-- Run tests with:
-```bash
-pnpm test:e2e
-```
-
----
-
-## 5. Review & PR Process
+## 4. Review & PR Process
 
 1. **Branching**: Create a feature branch from `main`.
 2. **Checks**: Ensure `pnpm check:turbo` (runs Biome and TSC) passes.

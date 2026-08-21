@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 const NextSitemapConfig = {
-  siteUrl: 'https://nextarter-tailwind.sznm.dev',
   generateRobotsTxt: true,
+  siteUrl: 'https://nextarter-tailwind.sznm.dev',
 };
 
 module.exports = NextSitemapConfig;
