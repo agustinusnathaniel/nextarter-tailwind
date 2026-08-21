@@ -9,16 +9,14 @@ type LayoutProps = {
   children: ReactNode;
 };
 
-const Layout = ({ children }: LayoutProps) => {
-  return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-      <div className="flex min-h-screen flex-col">
-        <Header />
-        <main className="wrapper">{children}</main>
-        <Footer />
-      </div>
-    </ThemeProvider>
-  );
-};
+const Layout = ({ children }: LayoutProps) => (
+  <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+    <div className="flex min-h-screen flex-col">
+      <Header />
+      <main className="wrapper">{children}</main>
+      <Footer />
+    </div>
+  </ThemeProvider>
+);
 
 export default Layout;
