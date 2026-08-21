@@ -22,5 +22,3 @@ minimumReleaseAgeExclude:
   - '@typescript-eslint/tsconfig-utils'
   - '@typescript-eslint/visitor-keys'
 
-overrides:
-  "@types/react": "19.2.14"
