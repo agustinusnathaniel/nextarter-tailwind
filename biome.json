@@ -21,6 +21,8 @@
       "!src/**/*/utils.ts",
       "!src/**/*.css",
       "!*.d.ts",
+      "!public",
+      "!**/*.svg",
       "!.agents",
       "!.claude"
     ]
@@ -35,7 +37,15 @@
       "next": "recommended"
     },
     "rules": {
-      "recommended": true,
+      "preset": "recommended",
+      "complexity": {
+        "noExcessiveLinesPerFunction": {
+          "level": "error",
+          "options": {
+            "maxLines": 60
+          }
+        }
+      },
       "correctness": {
         "useImageSize": "off"
       },
@@ -55,6 +65,13 @@
           "level": "error",
           "options": {
             "filenameCases": ["kebab-case"]
+          }
+        },
+        "noExcessiveLinesPerFile": {
+          "level": "error",
+          "options": {
+            "maxLines": 500,
+            "skipBlankLines": true
           }
         }
       },
