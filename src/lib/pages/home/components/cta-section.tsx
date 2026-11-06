@@ -42,7 +42,7 @@ export const CTASection = () => (
         Use This Template
       </a>
       <a
-        className="rounded-3xl p-2 font-semibold text-xs"
+        className="rounded-3xl p-2 text-xs font-semibold"
         href={`https://github.com/${repoName}`}
         rel="noopener noreferrer"
         target="_blank"
